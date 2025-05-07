@@ -1,5 +1,6 @@
 import Hello from "./components/Hello.jsx" 
 import JsxExample from "./components/JsxExample.jsx"
+import Welcome from "./components/Welcome.jsx"
 
 export function App() {
 
@@ -8,6 +9,7 @@ export function App() {
             <h1>Hello World!</h1>
             <Hello nome={"Cleisonauta"} />
             <JsxExample/>
+            <Welcome name={"Samuel"} />
         </div>
 
     )
