@@ -1,6 +1,7 @@
 import Hello from "./components/Hello.jsx" 
 import JsxExample from "./components/JsxExample.jsx"
 import Welcome from "./components/Welcome.jsx"
+import Greeting from "./components/Greeting.jsx"
 
 export function App() {
 
@@ -10,6 +11,9 @@ export function App() {
             <Hello nome={"Cleisonauta"} />
             <JsxExample/>
             <Welcome name={"Samuel"} />
+
+            <Greeting name="João" age={25} />
+
         </div>
 
     )

@@ -1,4 +1,4 @@
-import { use } from "react"
+import "../style.css"
 
 export default function Welcome({name}) {
 
