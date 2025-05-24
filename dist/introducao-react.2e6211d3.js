@@ -16121,17 +16121,27 @@ var _loginControlJsx = require("./components/LoginControl.jsx");
 var _loginControlJsxDefault = parcelHelpers.interopDefault(_loginControlJsx);
 var _toDoListJsx = require("./components/ToDoList.jsx");
 var _toDoListJsxDefault = parcelHelpers.interopDefault(_toDoListJsx);
+var _eventExampleJsx = require("./components/EventExample.jsx");
+var _eventExampleJsxDefault = parcelHelpers.interopDefault(_eventExampleJsx);
+var _counterEffectJsx = require("./components/CounterEffect.jsx");
+var _counterEffectJsxDefault = parcelHelpers.interopDefault(_counterEffectJsx);
+var _formExampleJsx = require("./components/FormExample.jsx");
+var _formExampleJsxDefault = parcelHelpers.interopDefault(_formExampleJsx);
+var _messageJsx = require("./components/Message.jsx");
+var _messageJsxDefault = parcelHelpers.interopDefault(_messageJsx);
+var _messageListJsx = require("./components/MessageList.jsx");
+var _messageListJsxDefault = parcelHelpers.interopDefault(_messageListJsx);
 function App() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "App",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _toDoListJsxDefault.default), {}, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _messageListJsxDefault.default), {}, void 0, false, {
             fileName: "App.jsx",
-            lineNumber: 22,
+            lineNumber: 32,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "App.jsx",
-        lineNumber: 12,
+        lineNumber: 17,
         columnNumber: 9
     }, this);
 }
@@ -16144,7 +16154,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU","./components/Welcome.jsx":"gIVXj","./components/Greeting.jsx":"eSRjc","./components/Counter.jsx":"5LyVk","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/LoginControl.jsx":"iy7fy","./components/ToDoList.jsx":"9wdRZ"}],"aRs8i":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU","./components/Welcome.jsx":"gIVXj","./components/Greeting.jsx":"eSRjc","./components/Counter.jsx":"5LyVk","./components/LoginControl.jsx":"iy7fy","./components/ToDoList.jsx":"9wdRZ","./components/EventExample.jsx":"7sQqW","./components/CounterEffect.jsx":"8XHvK","./components/FormExample.jsx":"idmes","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/Message.jsx":"2fUzC","./components/MessageList.jsx":"bEcic"}],"aRs8i":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$4bf0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$4bf0.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18889,6 +18899,449 @@ $RefreshReg$(_c, "ToDoList");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["cAXQq","3UcWX"], "3UcWX", "parcelRequire150d", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7sQqW":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$de9d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$de9d.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$de9d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>EventExample);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function EventExample() {
+    _s();
+    //Eventos que podem ser utilizados como o onChange e onClick
+    const [inputValue, setInputValue] = (0, _react.useState)('');
+    const handleChange = (e)=>{
+        setInputValue(e.target.value);
+    };
+    const handleClick = ()=>{
+        console.log("Bot\xe3o clicado!");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Exemplo de Evento:"
+            }, void 0, false, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 21,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: handleClick,
+                children: "Clique-me"
+            }, void 0, false, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 23,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                onChange: handleChange,
+                type: "text",
+                value: inputValue,
+                placeholder: "Digite algo..."
+            }, void 0, false, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 25,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    " Voc\xea digitou: ",
+                    inputValue,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 31,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/EventExample.jsx",
+        lineNumber: 20,
+        columnNumber: 9
+    }, this);
+}
+_s(EventExample, "SORcW8kVWUa8fZ+un8oXhp/OLnk=");
+_c = EventExample;
+var _c;
+$RefreshReg$(_c, "EventExample");
+
+  $parcel$ReactRefreshHelpers$de9d.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"8XHvK":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e060 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$e060.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e060.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>CounterEffect);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function CounterEffect() {
+    _s();
+    //Utilizando useEffects para acionar ações após uma ação
+    const [count, setCount] = (0, _react.useState)(0);
+    const [isEven, setIsEven] = (0, _react.useState)(false);
+    //Efeito que será dependente da variável 'count'
+    (0, _react.useEffect)(()=>{
+        console.log(`O contador mudou para: ${count}`);
+        setIsEven(count % 2 === 0);
+        //Efeito visual baseado no valor
+        document.title = `Contagem: ${count}`;
+    }, [
+        count
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Contador com efeito dependente: "
+            }, void 0, false, {
+                fileName: "components/CounterEffect.jsx",
+                lineNumber: 25,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Valor atual: ",
+                    count,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "components/CounterEffect.jsx",
+                lineNumber: 26,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "O n\xfamreo \xe9 par/\xedmpar"
+            }, void 0, false, {
+                fileName: "components/CounterEffect.jsx",
+                lineNumber: 27,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>{
+                    setCount(count + 1);
+                },
+                children: "Incrementar"
+            }, void 0, false, {
+                fileName: "components/CounterEffect.jsx",
+                lineNumber: 29,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>{
+                    setCount(0);
+                },
+                children: "Resetar"
+            }, void 0, false, {
+                fileName: "components/CounterEffect.jsx",
+                lineNumber: 33,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/CounterEffect.jsx",
+        lineNumber: 23,
+        columnNumber: 9
+    }, this);
+}
+_s(CounterEffect, "4bUlm5XRyYxKyjSJgknbDFTmeKg=");
+_c = CounterEffect;
+var _c;
+$RefreshReg$(_c, "CounterEffect");
+
+  $parcel$ReactRefreshHelpers$e060.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"idmes":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9554 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9554.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9554.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>FormExample);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function FormExample() {
+    _s();
+    const [formData, setFormData] = (0, _react.useState)({
+        nome: '',
+        email: '',
+        inscrito: false
+    });
+    const handleChange = (e)=>{
+        const { name, value, type, checked } = e.target;
+        setFormData((prev)=>({
+                ...prev,
+                [name]: type === 'checkbox' ? checked : value
+            }));
+    };
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        alert(`Dados enviados: ${JSON.stringify(formData)}`);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Formul\xe1rio Controlado:"
+            }, void 0, false, {
+                fileName: "components/FormExample.jsx",
+                lineNumber: 30,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: handleSubmit,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Nome:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    name: "nome",
+                                    value: formData.nome,
+                                    onChange: handleChange
+                                }, void 0, false, {
+                                    fileName: "components/FormExample.jsx",
+                                    lineNumber: 37,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "components/FormExample.jsx",
+                            lineNumber: 35,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 34,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Email:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    name: "email",
+                                    value: formData.email,
+                                    onChange: handleChange
+                                }, void 0, false, {
+                                    fileName: "components/FormExample.jsx",
+                                    lineNumber: 49,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "components/FormExample.jsx",
+                            lineNumber: 47,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 46,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "checkbox",
+                                    name: "inscrito",
+                                    checked: formData.inscrito,
+                                    onChange: handleChange
+                                }, void 0, false, {
+                                    fileName: "components/FormExample.jsx",
+                                    lineNumber: 59,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/FormExample.jsx",
+                                lineNumber: 58,
+                                columnNumber: 21
+                            }, this),
+                            "Assinar newsletter"
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 57,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        children: "Enviar"
+                    }, void 0, false, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 68,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/FormExample.jsx",
+                lineNumber: 32,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/FormExample.jsx",
+        lineNumber: 29,
+        columnNumber: 9
+    }, this);
+}
+_s(FormExample, "JBzzkWutBs6fEG+Dt+d8xI2E/d0=");
+_c = FormExample;
+var _c;
+$RefreshReg$(_c, "FormExample");
+
+  $parcel$ReactRefreshHelpers$9554.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"2fUzC":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$b433 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$b433.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b433.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Message);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Message({ text, onDismiss }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            border: '1px solid #ccc',
+            padding: '10px',
+            margin: '10px'
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: text
+            }, void 0, false, {
+                fileName: "components/Message.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: onDismiss,
+                children: "Fechar"
+            }, void 0, false, {
+                fileName: "components/Message.jsx",
+                lineNumber: 9,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/Message.jsx",
+        lineNumber: 5,
+        columnNumber: 9
+    }, this);
+}
+_c = Message;
+var _c;
+$RefreshReg$(_c, "Message");
+
+  $parcel$ReactRefreshHelpers$b433.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"bEcic":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$1124 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$1124.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1124.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>MessageList);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _messageJsx = require("./Message.jsx");
+var _messageJsxDefault = parcelHelpers.interopDefault(_messageJsx);
+var _s = $RefreshSig$();
+function MessageList() {
+    _s();
+    const [messages, setMessages] = (0, _react.useState)([
+        {
+            id: 1,
+            text: 'Primeira mansagem'
+        },
+        {
+            id: 2,
+            text: 'Segunda mansagem'
+        },
+        {
+            id: 3,
+            text: 'Terceira mansagem'
+        }
+    ]);
+    const handleDismiss = (id)=>{
+        setMessages(messages.filter((message)=>message.id !== id));
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Lista de Mensagens"
+            }, void 0, false, {
+                fileName: "components/MessageList.jsx",
+                lineNumber: 20,
+                columnNumber: 13
+            }, this),
+            messages.map((message)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _messageJsxDefault.default), {
+                    text: message.text,
+                    onDismiss: ()=>{
+                        handleDismiss(message.id);
+                    }
+                }, message.id, false, {
+                    fileName: "components/MessageList.jsx",
+                    lineNumber: 23,
+                    columnNumber: 17
+                }, this))
+        ]
+    }, void 0, true, {
+        fileName: "components/MessageList.jsx",
+        lineNumber: 19,
+        columnNumber: 9
+    }, this);
+}
+_s(MessageList, "LisUPZToIfi6A6D7kSRGDoxK8NY=");
+_c = MessageList;
+var _c;
+$RefreshReg$(_c, "MessageList");
+
+  $parcel$ReactRefreshHelpers$1124.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./Message.jsx":"2fUzC","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["cAXQq","3UcWX"], "3UcWX", "parcelRequire150d", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=introducao-react.2e6211d3.js.map
